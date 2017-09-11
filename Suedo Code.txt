@@ -1,0 +1,51 @@
+Suedo Code
+
+Enterbutton = gpio 128
+Fret1a
+Fret1b
+Fret2a
+Fret2b
+Fret3a
+Fret3b
+
+key[] //pre determined array for chord to letter correspondence
+
+buttons[]=[value fret1a, val fret1b, val fret2a, val, val, val]
+int frets [] = [0,0,0]
+
+loop
+	if enterbutton == high
+		fill buttons []
+		fill frets []
+		printtoscreen (find_match[readarray, key])
+	endif
+end loop
+
+int[][] alphabetKey= {
+        {0,0,0}, //space
+        {1,0,0}, //a
+        {0,1,0}, //b
+        {0,0,1}, //c
+        {1,1,0}, //d
+        {1,0,1}, //e
+        {0,1,1}, //f
+        {1,1,1}, //g
+        {2,0,0}, //h
+        {0,2,0}, //i
+        {0,0,2}, //j
+        {1,2,0}, //k
+        {2,1,0}, //l
+        {1,0,2}, //m
+        {2,0,1}, //n
+        {0,1,2}, //o
+        {0,2,1}, //p
+        {1,1,2}, //q
+        {1,2,1}, //r
+        {2,1,1}, //s
+        {1,2,2}, //t
+        {2,1,2}, //u
+        {2,2,1}, //v
+        {2,2,0}, //w
+        {2,0,2}, //x
+        {0,2,2}, //y
+        {2,2,2}  //z
